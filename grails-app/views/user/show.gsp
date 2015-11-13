@@ -50,20 +50,65 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${userInstance?.estudios_pregrado}">
+				<g:if test="${userInstance?.estudios_pregrado1}">
 				<li class="fieldcontain">
-					<span id="estudios_pregrado-label" class="property-label"><g:message code="user.estudios_pregrado.label" default="Estudiospregrado" /></span>
+					<span id="estudios_pregrado1-label" class="property-label"><g:message code="user.estudios_pregrado1.label" default="Estudiospregrado1" /></span>
 					
-						<span class="property-value" aria-labelledby="estudios_pregrado-label"><g:fieldValue bean="${userInstance}" field="estudios_pregrado"/></span>
+						<span class="property-value" aria-labelledby="estudios_pregrado1-label"><g:fieldValue bean="${userInstance}" field="estudios_pregrado1"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${userInstance?.estudios_postgrado}">
+				<g:if test="${userInstance?.estudios_pregrado2}">
 				<li class="fieldcontain">
-					<span id="estudios_postgrado-label" class="property-label"><g:message code="user.estudios_postgrado.label" default="Estudiospostgrado" /></span>
+					<span id="estudios_pregrado2-label" class="property-label"><g:message code="user.estudios_pregrado2.label" default="Estudiospregrado2" /></span>
 					
-						<span class="property-value" aria-labelledby="estudios_postgrado-label"><g:fieldValue bean="${userInstance}" field="estudios_postgrado"/></span>
+						<span class="property-value" aria-labelledby="estudios_pregrado2-label"><g:fieldValue bean="${userInstance}" field="estudios_pregrado2"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.estudios_pregrado3}">
+				<li class="fieldcontain">
+					<span id="estudios_pregrado3-label" class="property-label"><g:message code="user.estudios_pregrado3.label" default="Estudiospregrado3" /></span>
+					
+						<span class="property-value" aria-labelledby="estudios_pregrado3-label"><g:fieldValue bean="${userInstance}" field="estudios_pregrado3"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.estudios_postgrado1}">
+				<li class="fieldcontain">
+					<span id="estudios_postgrado1-label" class="property-label"><g:message code="user.estudios_postgrado1.label" default="Estudiospostgrado1" /></span>
+					
+						<span class="property-value" aria-labelledby="estudios_postgrado1-label"><g:fieldValue bean="${userInstance}" field="estudios_postgrado1"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.estudios_postgrado2}">
+				<li class="fieldcontain">
+					<span id="estudios_postgrado2-label" class="property-label"><g:message code="user.estudios_postgrado2.label" default="Estudiospostgrado2" /></span>
+					
+						<span class="property-value" aria-labelledby="estudios_postgrado2-label"><g:fieldValue bean="${userInstance}" field="estudios_postgrado2"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.estudios_postgrado3}">
+				<li class="fieldcontain">
+					<span id="estudios_postgrado3-label" class="property-label"><g:message code="user.estudios_postgrado3.label" default="Estudiospostgrado3" /></span>
+					
+						<span class="property-value" aria-labelledby="estudios_postgrado3-label"><g:fieldValue bean="${userInstance}" field="estudios_postgrado3"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${userInstance?.area_investigacion}">
+				<li class="fieldcontain">
+					<span id="area_investigacion-label" class="property-label"><g:message code="user.area_investigacion.label" default="Areainvestigacion" /></span>
+					
+						<span class="property-value" aria-labelledby="area_investigacion-label"><g:fieldValue bean="${userInstance}" field="area_investigacion"/></span>
 					
 				</li>
 				</g:if>
@@ -77,11 +122,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${userInstance?.area_investigacion}">
+				<g:if test="${userInstance?.otro}">
 				<li class="fieldcontain">
-					<span id="area_investigacion-label" class="property-label"><g:message code="user.area_investigacion.label" default="Areainvestigacion" /></span>
+					<span id="otro-label" class="property-label"><g:message code="user.otro.label" default="Otro" /></span>
 					
-						<span class="property-value" aria-labelledby="area_investigacion-label"><g:fieldValue bean="${userInstance}" field="area_investigacion"/></span>
+						<span class="property-value" aria-labelledby="otro-label"><g:fieldValue bean="${userInstance}" field="otro"/></span>
 					
 				</li>
 				</g:if>

@@ -121,6 +121,8 @@ log4j.main = {
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'fisw.Usuario'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'fisw.UsuarioRol'
 grails.plugin.springsecurity.authority.className = 'fisw.Rol'
+grails.plugin.springsecurity.successHandler.alwaysUseDefault=true
+grails.plugin.springsecurity.successHandler.defaultTargetUrl='/Dashboard'
 grails.plugin.springsecurity.logout.postOnly= false
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                ['permitAll'],
@@ -131,8 +133,9 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/css/**':       ['permitAll'],
 	'/**/images/**':    ['permitAll'],
 	'/**/favicon.ico':  ['permitAll'],
-	'/user/create':           ['permitAll'],
-	'/index/save':           ['permitAll'],
-	'/index/index':           ['permitAll']
+	'/user/create':     ['permitAll'],
+	'/user/edit':      ['ROLE_ADMIN','ROLE_DIRECTOR'],
+	'/user/index':      ['ROLE_ADMIN','ROLE_DIRECTOR'],
+	'/user/show':      ['ROLE_ADMIN','ROLE_DIRECTOR']
 ]
 

@@ -30,11 +30,11 @@
 					
 						<g:sortableColumn property="nombre" title="${message(code: 'user.nombre.label', default: 'Nombre')}" />
 					
-						<g:sortableColumn property="estudios_pregrado" title="${message(code: 'user.estudios_pregrado.label', default: 'Estudiospregrado')}" />
+						<g:sortableColumn property="estudios_pregrado1" title="${message(code: 'user.estudios_pregrado1.label', default: 'Estudiospregrado1')}" />
 					
-						<g:sortableColumn property="estudios_postgrado" title="${message(code: 'user.estudios_postgrado.label', default: 'Estudiospostgrado')}" />
+						<g:sortableColumn property="estudios_pregrado2" title="${message(code: 'user.estudios_pregrado2.label', default: 'Estudiospregrado2')}" />
 					
-						<g:sortableColumn property="cargo" title="${message(code: 'user.cargo.label', default: 'Cargo')}" />
+						<g:sortableColumn property="estudios_pregrado3" title="${message(code: 'user.estudios_pregrado3.label', default: 'Estudiospregrado3')}" />
 					
 					</tr>
 				</thead>
@@ -48,11 +48,11 @@
 					
 						<td>${fieldValue(bean: userInstance, field: "nombre")}</td>
 					
-						<td>${fieldValue(bean: userInstance, field: "estudios_pregrado")}</td>
+						<td>${fieldValue(bean: userInstance, field: "estudios_pregrado1")}</td>
 					
-						<td>${fieldValue(bean: userInstance, field: "estudios_postgrado")}</td>
+						<td>${fieldValue(bean: userInstance, field: "estudios_pregrado2")}</td>
 					
-						<td>${fieldValue(bean: userInstance, field: "cargo")}</td>
+						<td>${fieldValue(bean: userInstance, field: "estudios_pregrado3")}</td>
 					
 					</tr>
 				</g:each>
