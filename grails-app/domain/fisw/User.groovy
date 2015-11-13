@@ -16,8 +16,7 @@ class User extends Usuario {
 
     Report report
     static hasMany = [magazine_publications:Magazine_Publication,conferences_attendings:Conference_Attending,book_publications:Book_Publication,multimedias:Multimedia,
-thesiss:Thesis,project_user:Project_User,advancing_thesiss:Advancing_Thesis]
-    static belongsTo = Advancing_Thesis
+thesiss:Thesis,project_user:Project_User,advancing_thesis_user:Advancing_Thesis_User]
 
     static constraints = {
 	nombre()

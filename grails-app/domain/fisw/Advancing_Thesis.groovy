@@ -7,7 +7,7 @@ class Advancing_Thesis {
     String dir_file
     String link_thesis
 
-    static hasMany = [users:User]
+    static hasMany = [advancing_thesis_user:Advancing_Thesis_User]
 
     static constraints = {
 
