@@ -14,6 +14,11 @@ class User extends Usuario {
     String otro
     String foto
 
+    Report report
+    static hasMany = [magazine_publications:Magazine_Publication,conferences_attendings:Conference_Attending,book_publications:Book_Publication,multimedias:Multimedia,
+thesiss:Thesis,project_user:Project_User,advancing_thesiss:Advancing_Thesis]
+    static belongsTo = Advancing_Thesis
+
     static constraints = {
 	nombre()
 	estudios_pregrado1 nullable:true
@@ -26,6 +31,7 @@ class User extends Usuario {
 	cargo inList:["Estudiante Pregrado","Estudiante Postgrado","Trabajador","Colaborador Internacional","Colaborador Nacional","Jefe de Laboratorio","Otro"], nullable:true
 	otro nullable:true
 	foto nullable:true
+	report nullable:true
     }
 
     User(String username, String password,String nombre,String estudios_pregrado1,String estudios_pregrado2,String estudios_pregrado3,String estudios_postgrado1,String estudios_postgrado2,String estudios_postgrado3,String area_investigacion,String cargo,String otro, String foto) {
