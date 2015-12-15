@@ -17,7 +17,7 @@ class Book_Publication {
         author()
         isbn()
         year()
-        dir_file()
+        dir_file nullable:true
         editorial()
 
     }

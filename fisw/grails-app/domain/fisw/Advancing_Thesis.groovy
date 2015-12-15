@@ -4,10 +4,10 @@ class Advancing_Thesis {
 
     String thesis_name
     String description
-    byte[] dir_file
+    String dir_file
     String link_thesis
 
-    static hasMany = [advancing_thesis_user:Advancing_Thesis_User]
+    static hasMany = [advancing_thesis_user:Advancing_Thesis_User,commentaries:Commentary]
 
     static constraints = {
 
