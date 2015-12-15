@@ -6,7 +6,7 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
-@Secured('permitAll')
+@Secured(['permitAll'])
 class UserController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
@@ -21,7 +21,7 @@ class UserController {
     }
 
     def create() {
-        respond new User(params)
+        respond new Usuario(params)
     }
 
     @Transactional

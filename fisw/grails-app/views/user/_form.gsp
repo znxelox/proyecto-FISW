@@ -28,13 +28,12 @@
 	<g:textField name="nombre" required="" value="${userInstance?.nombre}"/>
 
 </div>
-<sec:access expression="hasRole('ROLE_ADMIN')">
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'estudios_pregrado1', 'error')} required">
 	<label for="estudios_pregrado1">
 		<g:message code="user.estudios_pregrado1.label" default="Estudios pregrado" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="estudios_pregrado1" required="" value="${userInstance?.estudios_pregrado1}"/>
+	<g:textField name="estudios_pregrado1" value="${userInstance?.estudios_pregrado1}"/>
 
 </div>
 
@@ -43,7 +42,7 @@
 		<g:message code="user.estudios_pregrado2.label" default="Estudios pregrado" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="estudios_pregrado2" required="" value="${userInstance?.estudios_pregrado2}"/>
+	<g:textField name="estudios_pregrado2" value="${userInstance?.estudios_pregrado2}"/>
 
 </div>
 
@@ -52,7 +51,7 @@
 		<g:message code="user.estudios_pregrado3.label" default="Estudios pregrado" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="estudios_pregrado3" required="" value="${userInstance?.estudios_pregrado3}"/>
+	<g:textField name="estudios_pregrado3" value="${userInstance?.estudios_pregrado3}"/>
 
 </div>
 
@@ -61,7 +60,7 @@
 		<g:message code="user.estudios_postgrado1.label" default="Estudios postgrado" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="estudios_postgrado1" required="" value="${userInstance?.estudios_postgrado1}"/>
+	<g:textField name="estudios_postgrado1" value="${userInstance?.estudios_postgrado1}"/>
 
 </div>
 
@@ -70,7 +69,7 @@
 		<g:message code="user.estudios_postgrado2.label" default="Estudios postgrado" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="estudios_postgrado2" required="" value="${userInstance?.estudios_postgrado2}"/>
+	<g:textField name="estudios_postgrado2" value="${userInstance?.estudios_postgrado2}"/>
 
 </div>
 
@@ -79,7 +78,7 @@
 		<g:message code="user.estudios_postgrado3.label" default="Estudios postgrado" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="estudios_postgrado3" required="" value="${userInstance?.estudios_postgrado3}"/>
+	<g:textField name="estudios_postgrado3" value="${userInstance?.estudios_postgrado3}"/>
 
 </div>
 
@@ -88,7 +87,7 @@
 		<g:message code="user.area_investigacion.label" default="Area de investigacion" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select name="area_investigacion" from="${userInstance.constraints.area_investigacion.inList}" required="" value="${userInstance?.area_investigacion}" valueMessagePrefix="user.area_investigacion"/>
+	<g:select name="area_investigacion" from="${userInstance.constraints.area_investigacion.inList}" value="${userInstance?.area_investigacion}" valueMessagePrefix="user.area_investigacion"/>
 
 </div>
 
@@ -97,7 +96,7 @@
 		<g:message code="user.cargo.label" default="Cargo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select name="cargo" from="${userInstance.constraints.cargo.inList}" required="" value="${userInstance?.cargo}" valueMessagePrefix="user.cargo"/>
+	<g:select name="cargo" from="${userInstance.constraints.cargo.inList}" value="${userInstance?.cargo}" valueMessagePrefix="user.cargo"/>
 
 </div>
 
@@ -106,7 +105,7 @@
 		<g:message code="user.otro.label" default="Otro cargo(en caso de que no aparezca en la lista)" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="otro" required="" value="${userInstance?.otro}"/>
+	<g:textField name="otro" value="${userInstance?.otro}"/>
 
 </div>
 
@@ -145,4 +144,3 @@
 	<g:checkBox name="passwordExpired" value="${userInstance?.passwordExpired}" />
 
 </div>
-</sec:access>
