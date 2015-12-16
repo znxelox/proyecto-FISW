@@ -31,6 +31,8 @@
 	<g:link controller="User" action="show" id='${test}' > Mi perfil </g:link>
 
 	<h2>Avance de proyecto</h2>
+
+	<g:link controller="Document" action="list"> Subir Archivo </g:link>
 	
 
 </body>

@@ -140,3 +140,15 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/user/update':     ['permitAll']
 ]
 
+environments {
+    development {
+        uploadFolder = "/home/masterduck7/A"
+    }
+    test {
+        uploadFolder = "/home/masterduck7/A"
+    }
+    production {
+        uploadFolder = "/home/masterduck7/A"
+    }
+}
+

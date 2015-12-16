@@ -108,7 +108,7 @@
 	<g:textField name="otro" value="${userInstance?.otro}"/>
 
 </div>
-
+<sec:ifAnyGranted roles="ROLE_ADMIN">
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'accountExpired', 'error')} ">
 	<label for="accountExpired">
 		<g:message code="user.accountExpired.label" default="Cuenta expirada" />
@@ -144,3 +144,4 @@
 	<g:checkBox name="passwordExpired" value="${userInstance?.passwordExpired}" />
 
 </div>
+</sec:ifAnyGranted>
