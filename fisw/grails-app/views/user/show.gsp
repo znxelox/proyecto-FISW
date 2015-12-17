@@ -174,11 +174,9 @@
 				<fieldset class="buttons">
 					<g:link class="edit" action="edit" resource="${userInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
 				</fieldset>
-				<sec:ifAnyGranted roles="ROLE_ADMIN">
 				<fieldset class="buttons">
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
-				</sec:ifAnyGranted>
 			</g:form>
 		</div>
 	</body>

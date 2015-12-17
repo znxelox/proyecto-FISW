@@ -32,7 +32,9 @@
 
 	<h2>Avance de proyecto</h2>
 
-	<g:link controller="Document" action="list"> Subir Archivo </g:link>
+	<g:link controller="Advancing_Thesis" action="create"> Añadir Tesis </g:link>
+	<br>
+	<g:link controller="Document" action="create"> Subir Archivo </g:link>
 	
 
 </body>
