@@ -142,13 +142,13 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 
 environments {
     development {
-        uploadFolder = "/home/masterduck7/A"
+        uploadFolder = "/Users/Marcelo/"
     }
     test {
-        uploadFolder = "/home/masterduck7/A"
+        uploadFolder = "/Users/Marcelo/"
     }
     production {
-        uploadFolder = "/home/masterduck7/A"
+        uploadFolder = "/Users/Marcelo/"
     }
 }
 

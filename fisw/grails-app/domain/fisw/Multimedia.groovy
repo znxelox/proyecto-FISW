@@ -4,7 +4,7 @@ class Multimedia {
 
     String name
     String description
-    String dir_file
+    byte[] archivo
     String type
 
     static belongsTo = User
@@ -13,7 +13,7 @@ class Multimedia {
 
         name()
         description()
-        dir_file()
+        archivo(maxSize: 204800)
         type inList: ["Foto","Video"]
 
     }

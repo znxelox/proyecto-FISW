@@ -14,6 +14,43 @@ class UserController {
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond User.list(params), model:[userInstanceCount: User.count()]
+
+    }
+
+    def buscador(){
+        render view:'search'
+    }
+
+    def search(){
+        def buscando = request.getParameter("buscar")
+        def tipo = request.getParameter("tipo")
+
+        if(buscando.empty){
+            flash.message = "gg"
+            render view: 'search'
+        }
+        else{
+            if(tipo == 'Persona'){
+                def k= User.findByNombre(buscando)
+                if(k != null){
+                    render view: 'buscar_p' , model:[user: k]
+                }
+                
+            }
+            if(tipo == 'Archivo'){
+                def k= Multimedia.findByName(buscando)
+                if(k != null){
+                    render view: 'buscar_p' , model:[multimedia: k]
+                }
+
+            }
+            if(tipo == 'Cargo'){
+                def k= User.findByCargo(buscando)
+                if(k != null){
+                    render view: 'buscar_p' , model:[user: k]
+                }
+            }
+        }
     }
 
     def show(User userInstance) {
