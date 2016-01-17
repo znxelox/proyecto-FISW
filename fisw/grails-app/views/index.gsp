@@ -85,7 +85,6 @@
 			<div id="controller-list" role="navigation">
 				<h2>Links:</h2>
 				<ul>
-					<p><g:link controller="login" action="auth"> Login </g:link></p>
         				<p><g:link controller="user" action="create"> Registrarse </g:link></p>
 					<p><g:link controller="dashboard" action="index"> Dashboard </g:link></p>
 					<p><g:link controller="document" action="index"> Document </g:link></p>

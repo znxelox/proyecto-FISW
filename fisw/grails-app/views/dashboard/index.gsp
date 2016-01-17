@@ -11,9 +11,6 @@
     </style>
 </head>
 <body>
-	<h4>Seleccione el idioma</h4>
-	<g:link controller="${params.controller}" action="${params.action}" params="${params+[lang:'en']}">English</g:link>
-	<g:link controller="${params.controller}" action="${params.action}" params="${params+[lang:'es']}">Español</g:link>
 	<h2>Solicitudes de registro</h2>
 	<g:each in="${usuarios}" var="usuario" status="i">
 		<g:if test="${usuario.accountLocked == true}">

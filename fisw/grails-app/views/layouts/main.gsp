@@ -20,13 +20,24 @@
 	<body>
         <div id="grailsLogo" role="banner">
             <div id="logo">
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
                 <a href="${createLink(uri: '/')}" style="text-decoration:none;font-size:3em;letter-spacing:2px;">LABMMBA</a>
             </div>
             <div class="encabezado">
+		<g:link uri="/">Home</g:link>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<g:link controller="${params.controller}" action="${params.action}" params="${params+[lang:'en']}">English</g:link>
+		<g:link controller="${params.controller}" action="${params.action}" params="${params+[lang:'es']}">Español</g:link>
                 <sec:ifLoggedIn>
-                    <a href="${createLink(controller:'usuario',action:'perfil')}"><g:message code="Bienvenido" /> <sec:username /></a>
                     <a href="${createLink(controller:'logout')}"><g:message code="Logout" /></a>
-                </sec:ifLoggedIn>
+                </sec:ifLoggedIn>	
+                <sec:ifNotLoggedIn>
+                    <g:link controller="login" action="auth">Login</g:link>
+                </sec:ifNotLoggedIn>	
             </div>
         </div>
 		<g:layoutBody/>
