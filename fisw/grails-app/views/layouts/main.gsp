@@ -28,8 +28,9 @@
 		<g:link uri="/">Home</g:link>
 		<g:link controller="dashboard">Dashboard</g:link> 
 		<g:link controller="user" action="create"> Registrarse </g:link>
+		<g:link controller="User" action="buscador"> Busqueda </g:link>
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		&nbsp &nbsp &nbsp
 		<g:link controller="dashboard" action="changeLocale" params="[lang:'es', country:'ES']">Español</g:link> 
 		<g:link controller="dashboard" action="changeLocale" params="[lang:'en', country:'US']">English</g:link> 
                 <sec:ifLoggedIn>
