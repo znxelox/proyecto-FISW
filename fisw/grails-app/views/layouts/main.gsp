@@ -26,12 +26,12 @@
             </div>
             <div class="encabezado">
 		<g:link uri="/">Home</g:link>
+		<g:link controller="dashboard">Dashboard</g:link> 
+		<g:link controller="user" action="create"> Registrarse </g:link>
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-		<g:link controller="${params.controller}" action="${params.action}" params="${params+[lang:'en']}">English</g:link>
-		<g:link controller="${params.controller}" action="${params.action}" params="${params+[lang:'es']}">Español</g:link>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<g:link controller="dashboard" action="changeLocale" params="[lang:'es', country:'ES']">Español</g:link> 
+		<g:link controller="dashboard" action="changeLocale" params="[lang:'en', country:'US']">English</g:link> 
                 <sec:ifLoggedIn>
                     <a href="${createLink(controller:'logout')}"><g:message code="Logout" /></a>
                 </sec:ifLoggedIn>	

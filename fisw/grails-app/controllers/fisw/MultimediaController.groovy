@@ -10,11 +10,14 @@ import grails.transaction.Transactional
 class MultimediaController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
-
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Multimedia.list(params), model:[multimediaInstanceCount: Multimedia.count()]
     }
+    def changeLocale = {
+            java.util.Locale.setDefault(new Locale(params.lang, params.country))
+            redirect(view:"/")
+    }    
 
     def show(Multimedia multimediaInstance) {
         respond multimediaInstance

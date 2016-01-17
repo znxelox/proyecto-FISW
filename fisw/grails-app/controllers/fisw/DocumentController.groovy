@@ -5,10 +5,13 @@ import grails.plugin.springsecurity.annotation.Secured
 @Secured(['permitAll'])
 class DocumentController {
 	static allowedMethods = [save: "POST"]
-
 	def index(){
 		redirect(action: "list", params: params)
 	}
+    def changeLocale = {
+            java.util.Locale.setDefault(new Locale(params.lang, params.country))
+            redirect(view:"/")
+    }
 
      def list() {
         params.max = 10
