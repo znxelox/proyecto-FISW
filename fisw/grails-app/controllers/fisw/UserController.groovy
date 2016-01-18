@@ -50,7 +50,7 @@ class UserController {
             if(tipo == 'Cargo'){
                 def k= User.findByCargo(buscando)
                 if(k != null){
-                    render view: 'buscar_p' , model:[user: k]
+                    render view: 'buscar_c' , model:[user: k]
                 }
             }
         }

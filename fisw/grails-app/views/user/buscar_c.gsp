@@ -6,7 +6,7 @@
 <body>
 <br>
 
-<g:if test="${user}">
+<g:if test="${user.cargo}">
 <table align="center" border=1 cellspacing=0 >
 	<tr>
 		<td><strong>Nombre de usuario</strong></td>
@@ -28,18 +28,6 @@
 
 </g:if>
 
-<g:if test="${multimedia}">
-<table align="center" border=1 cellspacing=0 >
-	<tr>
-		<td><strong>Nombre</strong></td>
-		<td><strong>Descripcion</strong></td>
-	</tr>
-	<tr>
-		<td>${multimedia.name}</td>
-		<td>${multimedia.description} </td>
-	</tr>
-</table>
-</g:if>
 
 </body>
 
