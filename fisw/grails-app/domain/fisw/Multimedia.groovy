@@ -14,7 +14,7 @@ class Multimedia {
         name()
         description()
         archivo(maxSize: 204800)
-        type inList: ["Foto","Video"]
+        type inList: ["Foto","Video","Tesis","PDF"]
 
     }
 }

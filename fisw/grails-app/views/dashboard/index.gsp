@@ -33,7 +33,7 @@
 
 	<g:link controller="Advancing_Thesis" action="create"> Añadir Tesis </g:link>
 	<br>
-	<g:link controller="Document" action="create"> Subir Archivo </g:link>
+	<g:link controller="Multimedia" action="create"> Subir Archivo </g:link>
 
 </body>
 </html>
