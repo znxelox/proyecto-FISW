@@ -81,17 +81,8 @@
 		</style>
 	</head>
 	<body>
-		<div id="page-body" role="main">
-			<div id="controller-list" role="navigation">
-				<h2>Links:</h2>
-				<ul>
-					<p><g:link controller="document" action="index"> Document </g:link></p>
-					<p><g:link controller="multimedia" action="index"> Multimedia </g:link></p>
-					<p><g:link controller="user" action="index"> User </g:link></p>
-					<p><g:link controller="advancing_Thesis" action="index"> Avance de tesis </g:link></p>
-
-    				</ul>
-			</div>
-		</div>
+	<div id="page-body" role="main">
+            <h1>Laboratorio de Microbiología Molecular y Biotecnología Ambiental</h1>
+        </div>
 	</body>
 </html>
