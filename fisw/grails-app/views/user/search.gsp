@@ -1,7 +1,8 @@
 <html> 
 
 <head> 
-<title>Busqueda</title> 
+		<meta name="layout" content="main">
+		<title>Busqueda</title> 
 </head> 
 
 <body> 
