@@ -29,7 +29,7 @@ class UserController {
         def tipo = request.getParameter("tipo")
 
         if(buscando.empty){
-            flash.message = "gg"
+            flash.message = "Ingrese una palabra"
             render view: 'search'
         }
         else{
